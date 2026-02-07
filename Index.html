@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <title>مزمور من الأعماق</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --gold: #f1c40f;
+            --text: #ffffff;
+            --box-bg: rgba(0, 0, 0, 0.7); /* خلفية داكنة أكثر لضمان القراءة */
+        }
+
+        body { background-color: #000; }
+        .reveal { font-family: 'Cairo', sans-serif; color: var(--text); }
+        .reveal h1, .reveal h2, .reveal h3, .verse-text { font-family: 'Amiri', serif; }
+
+        /* زر ملء الشاشة */
+        #fullscreen-btn {
+            position: fixed; bottom: 20px; left: 20px; z-index: 100;
+            background: rgba(241, 196, 15, 0.9); border: none; padding: 12px; border-radius: 50%;
+            cursor: pointer; font-size: 1.2rem; color: #000;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+        }
+
+        /* تنسيق صندوق الآية */
+        .verse-box {
+            background: var(--box-bg);
+            border-right: 4px solid var(--gold);
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px auto;
+            max-width: 95%;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+        }
+        .verse-text {
+            font-size: 1.5em;
+            line-height: 1.5;
+            color: var(--gold);
+            margin: 0;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        /* شبكة البطاقات (Grid Layout) */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* عمودين متساويين */
+            gap: 15px;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .info-card {
+            background: rgba(30, 30, 30, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            padding: 15px;
+            font-size: 0.75em;
+            text-align: center;
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .info-card:hover { transform: translateY(-5px); border-color: var(--gold); }
+        .info-card strong { color: #4facfe; display: block; margin-bottom: 5px; font-size: 1.3em; }
+        .icon { font-size: 1.8em; margin-bottom: 5px; display: block; }
+
+        /* تنسيق الاقتباسات */
+        .quote-container {
+            background: rgba(0,0,0,0.75);
+            padding: 25px;
+            border-radius: 15px;
+            border-top: 3px solid var(--gold);
+            max-width: 85%;
+            margin: auto;
+            backdrop-filter: blur(4px);
+        }
+
+        /* تعديلات الموبايل */
+        @media (max-width: 700px) {
+            .verse-text { font-size: 1.2em; }
+            .info-card { padding: 10px; }
+            .grid-container { gap: 8px; }
+            .icon { font-size: 1.4em; }
+            h1 { font-size: 2em; }
+        }
+    </style>
+</head>
+<body>
+
+    <button id="fullscreen-btn" onclick="toggleFullScreen()" title="Full Screen">⛶</button>
+
+    <div class="reveal">
+        <div class="slides">
+
+            <section data-background-image="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?q=80&w=2070&auto=format&fit=crop" data-background-opacity="0.6">
+                <div style="font-size: 3em; color: var(--gold); text-shadow: 0 0 15px #000;">☩</div>
+                <h1>مزمور 129 (130)</h1>
+                <h3 style="color: var(--gold); text-shadow: 2px 2px 10px #000;">من الأعماق صرخت</h3>
+                <p style="font-size: 0.9em; opacity: 0.9; background: rgba(0,0,0,0.6); padding: 5px 15px; border-radius: 20px; display: inline-block;">صلاة النوم</p>
+            </section>
+
+            <section data-background-image="https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=2070&auto=format&fit=crop" data-background-opacity="0.5">
+                <div class="verse-box">
+                    <p class="verse-text">"مِنَ الأَعْمَاقِ صَرَخْتُ إِلَيْكَ يَا رَبُّ..."</p>
+                </div>
+                
+                <div class="grid-container">
+                    <div class="info-card fragment fade-in">
+                        <span class="icon">🚫👄</span>
+                        <strong>ليست شفايف</strong>
+                        <span style="opacity:0.9">الصلاة الحقيقية تخرج من القلب، لا من طرف اللسان.</span>
+                    </div>
+                    <div class="info-card fragment fade-in">
+                        <span class="icon">🐋🌊</span>
+                        <strong>أعماق الضيقة</strong>
+                        <span style="opacity:0.9">مثل يونان في بطن الحوت، الله يسمع من أعمق نقطة.</span>
+                    </div>
+                    <div class="info-card fragment fade-in">
+                        <span class="icon">⛓️🖤</span>
+                        <strong>أعماق الخطية</strong>
+                        <span style="opacity:0.9">حتى لو الخطية سحبتك لتحت.. اصرخ له ينجيك.</span>
+                    </div>
+                    <div class="info-card fragment fade-in">
+                        <span class="icon">❤️🔥</span>
+                        <strong>أعماق القلب</strong>
+                        <span style="opacity:0.9">الله لا يسمع علو الصوت، بل يسمع حرارة القلب.</span>
+                    </div>
+                </div>
+            </section>
+
+            <section data-background-image="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?q=80&w=1950&auto=format&fit=crop" data-background-opacity="0.5">
+                <div class="quote-container">
+                    <p style="font-style: italic; font-size: 1.1em;">
+                        "كما أن الجذور العميقة للأشجار تجعلها أكثر ثباتاً أمام العواصف، هكذا الصلاة التي تخرج من أعماق القلب تصعد بقوة لتخترق السماء."
+                    </p>
+                    <p style="color: var(--gold); margin-top: 15px; font-weight: bold;">-- القديس يوحنا ذهبي الفم</p>
+                </div>
+            </section>
+
+            <section data-background-image="https://images.unsplash.com/photo-1454789476662-53eb23ba5907?q=80&w=1952&auto=format&fit=crop" data-background-opacity="0.6">
+                <div class="verse-box">
+                    <p class="verse-text">"إِنْ كُنْتَ لِلآثَامِ رَاصِدًا... مَنْ يَثْبُتُ؟"</p>
+                </div>
+                
+                <div style="display: flex; justify-content: space-around; align-items: center; margin-top: 30px; background: rgba(0,0,0,0.7); padding: 20px; border-radius: 15px;">
+                    <div class="fragment fade-right" style="text-align: center;">
+                        <span style="font-size: 3em;">⚖️</span>
+                        <div style="color: #ff6b6b; font-weight: bold;">العدل</div>
+                    </div>
+                    <div class="fragment fade-up" style="font-size: 2em; opacity: 0.8;">⬅️ لكن ➡️</div>
+                    <div class="fragment fade-left" style="text-align: center;">
+                        <span style="font-size: 3em;">✝️</span>
+                        <div style="color: #4ecdc4; font-weight: bold;">المغفرة</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-background-image="https://images.unsplash.com/photo-1489549132488-d00b7eee80f1?q=80&w=1950&auto=format&fit=crop" data-background-opacity="0.5">
+                <div class="verse-box">
+                    <p class="verse-text">"مِنْ أَجْلِ اسْمِكَ صَبَرْتُ لَكَ يَا رَبُّ..."</p>
+                </div>
+                <div style="background: rgba(0,0,0,0.8); padding: 20px; border-radius: 10px; display: inline-block;">
+                    <ul style="list-style: none; padding: 0; text-align: right;">
+                        <li class="fragment fade-up" style="margin-bottom: 20px;">
+                            <strong style="color: var(--gold);">⏳ لماذا نصبر؟</strong><br>
+                            ليس لأننا أقوياء، بل ثقة في "اسمه" (الله المحب).
+                        </li>
+                        <li class="fragment fade-up">
+                            <strong style="color: var(--gold);">📜 ما هو ناموسه؟</strong><br>
+                            وعوده الصادقة في الكتاب: "من يقبل إليّ لا أخرجه خارجاً".
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section data-background-image="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1950&auto=format&fit=crop" data-background-opacity="0.4">
+                <div class="verse-box">
+                    <p class="verse-text">"مِنْ مَحْرَسِ الصُّبْحِ إِلَى اللَّيْلِ..."</p>
+                </div>
+                <div style="background: rgba(0,0,0,0.7); padding: 20px; border-radius: 10px; max-width: 85%; margin: auto;">
+                    <h3 style="color: #f39c12; margin: 0 0 10px 0;">🕰️ الفجر قادم</h3>
+                    <p style="font-size: 0.9em;">محرس الصبح هو آخر ظلمة قبل النور.</p>
+                    <hr style="border-color: #555;">
+                    <p style="font-size: 1em; font-weight: bold; color: #fff;">الدرس: مهما طالت التجربة، شمس المسيح ستشرق حتماً.</p>
+                </div>
+            </section>
+
+            <section data-background-image="https://images.unsplash.com/photo-1500491460312-c32fc2dbc751?q=80&w=1950&auto=format&fit=crop" data-background-opacity="0.4">
+                <div class="quote-container">
+                    <p style="font-size: 1.2em;">
+                        "لا توجد ضيقة دائمة.. لابد أن تنتهي. لذلك في كل ضيقة قل: مسيرها تنتهي."
+                    </p>
+                    <p style="color: var(--gold); margin-top: 15px; font-weight: bold;">-- قداسة البابا شنودة الثالث</p>
+                </div>
+            </section>
+
+            <section data-background-image="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1950&auto=format&fit=crop" data-background-opacity="0.5">
+                <div class="verse-box">
+                    <p class="verse-text">"عَظِيمٌ هُوَ خَلاَصُهُ، وَهُوَ يَفْتَدِي إِسْرَائِيلَ"</p>
+                </div>
+                <div class="fragment grow" style="background: rgba(0,0,0,0.7); padding: 20px; border-radius: 15px; margin-top: 20px;">
+                    <h2 style="color: var(--gold); text-shadow: 0 0 20px #e67e22;">عظيم هو خلاصه</h2>
+                    <p style="font-size: 1.1em;">بدأنا بـ <span style="color: #ff6b6b; font-weight: bold;">صرخة</span> .. وختمنا بـ <span style="color: #2ecc71; font-weight: bold;">فداء</span></p>
+                </div>
+            </section>
+
+            <section data-background-image="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1950&auto=format&fit=crop" data-background-opacity="0.5">
+                <h3 style="color: var(--gold); margin-bottom: 20px; text-shadow: 2px 2px 5px #000;">ماذا نفعل الآن؟</h3>
+                
+                <div class="grid-container" style="max-width: 90%; margin: auto;">
+                    <div class="info-card fragment fade-up">
+                        <span class="icon">🛐</span>
+                        <strong>تدريب الصلاة</strong>
+                        <span style="font-size: 0.9em; opacity: 0.9;">صلي المزمور ده النهاردة وأنت ساجد (مطانية).</span>
+                    </div>
+                    <div class="info-card fragment fade-up">
+                        <span class="icon">🛡️</span>
+                        <strong>الثقة في المغفرة</strong>
+                        <span style="font-size: 0.9em; opacity: 0.9;">لما تغلط، متيأسش.. قول: "من عندك المغفرة".</span>
+                    </div>
+                </div>
+
+                <div class="fragment fade-in" style="margin-top: 40px;">
+                    <h1 style="color: var(--gold); font-family: 'Amiri'; text-shadow: 0 0 20px var(--gold);">هلليلويا</h1>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: true, 
+            touch: true, 
+            progress: true, 
+            center: true, 
+            hash: true, 
+            rtl: true,
+            mouseWheel: false, 
+            transition: 'convex',
+            width: 960, height: 700, margin: 0.02, minScale: 0.1, maxScale: 2.0
+        });
+
+        function toggleFullScreen() {
+            if (!document.fullscreenElement) { document.documentElement.requestFullscreen().catch(err => { alert(`Error: ${err.message}`); }); } 
+            else { if (document.exitFullscreen) { document.exitFullscreen(); } }
+        }
+    </script>
+</body>
+</html>
